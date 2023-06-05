@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+</head>
+<body>
+    <div class="header"><h1>
+        "DIGITAL COUNTER"
+    </h1></div>
+
+    <div class="container">
+        <h2>COUNTER</h2>
+        <P class="counter">0</P>
+        <button class="increment"><i class="fa fa-plus"></i></button>
+        <button class="decrement"><i class="fa fa-minus"></i></button>
+    </div>
+<script>
+    const increment=document.querySelector('.increment');
+    const counter=document.querySelector('.counter');
+    const decrement=document.querySelector('.decrement');
+  
+         let  count=0;
+         increment.addEventListener("click",()=>{
+         count=count+1;
+         counter.innerHTML=count;
+        });
+
+        decrement.addEventListener("click",()=>{
+            count=count-1;
+            counter.innerHTML=count;
+        });
+
+ 
+</script>
+</body>
+</html>
